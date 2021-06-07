@@ -1,0 +1,50 @@
+html {
+    background-color: #121212;
+    overflow: hidden;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #121212;
+    color:white;
+    position: relative;
+}
+* {
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+
+
+.title:not(:last-child) {
+    margin: 0% 0%;
+}
+
+
+.input {
+    width:300px;
+}
+
+.center {
+    margin: auto;
+    width: 700px;
+}
+
+.selects {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+}
+
+
+.button {
+    display: block;
+    margin: auto;
+}

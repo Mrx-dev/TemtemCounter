@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+  background-color: #262626;
+  overflow: hidden;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+}
+
+* {
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5% auto;
+}
+
+.control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.control > .encounter {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  padding: 0%;
+  color: white;
+  font-size: 200%;
+  width: 200px;
+  text-align: center;
+  margin: 0% 2%;
+  background: none;
+  border: none;
+}
+
+button {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.save {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 150px;
+  width: 100%;
+}
+
+.button-is-link {
+  background-color: seagreen;
+}
+
+.btn-save {
+  width: 100px;
+  height: auto;
+  font-size: 15px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
