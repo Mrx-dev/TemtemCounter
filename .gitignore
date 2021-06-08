@@ -1,5 +1,4 @@
 node_modules/
 build.js
-dist/
+dist/*
 TemtemCounter-win32-x64/
-savefiles/*
