@@ -203,10 +203,10 @@ ipcMain.on('yes-btn', (event) => {
                             "encounter": data["encounter"]
                         }
                         LoadPageWindow = new BrowserWindow({
-                            width: 800,
-                            height: 500,
-                            minWidth: 300,
-                            minHeight: 250,
+                            width: 500,
+                            height: 600,
+                            minWidth: 450,
+                            minHeight: 300,
                             center: false,
                             icon: appPath + '/icons/Temtem.jpg',
                             title: "Temtem Counter",
@@ -293,12 +293,12 @@ try {
         LoadPageWindow = new BrowserWindow({
             width: 800,
             height: 500,
-            minWidth: 300,
-            minHeight: 400,
+            minWidth: 450,
+            minHeight: 300,
             center: false,
             icon: appPath + '/icons/Temtem.jpg',
             title: "Temtem Counter",
-            alwaysOnTop: true,
+            alwaysOnTop: false,
             webPreferences: {
                 nodeIntegration: true,
                 contextIsolation: false,
@@ -316,7 +316,6 @@ try {
             MenupageNew.close();
         }
         LoadPageWindow.loadURL(__dirname + "/window/load/index.html");
-        LoadPageWindow.webContents.openDevTools();
     });
 }
 catch { }
@@ -335,7 +334,7 @@ app.whenReady().then(() => {
         }
         catch { }
     });
-    globalShortcut.register('Ctrl+S', () => {
+    globalShortcut.register('Ctrl+Shift+S', () => {
         try {
             LoadPageWindow.webContents.send("save");
         }
